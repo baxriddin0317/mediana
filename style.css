@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 12px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#contant {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 50px;
+    box-shadow: 0 0 10px black;
+    box-sizing: border-box;
+
+ 
+}
+
+.basic {
+    width: 50%;
+}
+
+.left {
+    width: 10%;
+}
+
+.right {
+    width: 40%;
+}
+
+
+
+
+
+
+/* left side */
+
+.left-text p {
+    border: 1px solid black;
+    margin: 0;
+    padding: 1px 2px;
+}
+
+.left-text .left-top p {
+    padding: 19px 2px 1px 2px;
+   
+}
+
+
+
+
+
+
+/* BASIC */
+
+.basic .basic-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.basic .basic-top p {
+    margin: 0;
+}
+.basic-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.basic-bottom p{
+    border: 1px solid black;
+    width: 10%;
+    margin: 0;
+ 
+    /* padding: 0 50.2px 0 3px; */
+}
+.basic-bottom p:nth-child(-n+5){
+    background-color: #FF0000;
+}
+.basic-bottom p:nth-child(n+6){
+    background-color: #92D050;
+}
+
+
+.basic-bottom-input input{
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    height: 32px;
+    text-align: right;
+    border: 1px solid black;
+}
+/* .basic-bottom-input input:nth-child(-n+5){
+    background-color: #FF0000;
+}
+.basic-bottom-input input:nth-child(n+6){
+    background-color: #92D050;
+} */
+.basic-bottom-input{
+    display: flex;
+    margin: 0;
+}
+
+.left-bottom p{
+    height: 32px;
+}
+
+
+
+
+
+
+/* RIGHT */
+
+
+.right-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.right-top .box{
+    
+    
+    width: 81.6px;
+    height: 40px;
+    border: 1px solid black;
+}
+.right-top .box p{
+    padding: 0px 5px 0 5px;
+}
+
+
+.right-bottom .my-row{
+    display: flex;
+}
+.right-bottom .my-row p{
+    border: 1px solid black;
+    width: 81.6px;
+    height: 32px;
+    margin: 0;
+}
+
+
+
+.chart{
+    width: 95% !important;
+    height: 500px !important;
+    
+}
+
+
+/* ==== warning (ogoxlantirish) ==== */
+.sariq{
+    border: 2px solid rgb(187, 255, 0) !important;
+}
+
+.warning{
+    border: 2px solid red !important;
+}

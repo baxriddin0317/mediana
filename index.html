@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Median Nazorat Karta</title>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="chart d-inline-block ml-5">
+                    <canvas id="myChart" ></canvas> 
+                </div>
+            </div>
+
+            <div class="col-md-6">
+            <div class="chart d-inline-block ml-5">
+                <canvas id="myChart1" ></canvas> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="contant" class="mt-0 mb-5  container-fluid">
+    
+        <div class="left">
+            <div class="left-text">
+
+                <div class="left-top text-center">
+                    <p>Na'munalar raqami (n)</p>
+                </div>
+                <div class="left-bottom text-right">
+                    <p>x1</p>
+                    <p>x2</p>
+                    <p>x3</p>
+                    <p>x4</p>
+                    <p>x5</p>
+                    <p>x6</p>
+                    <p>x7</p>
+                    <p>x8</p>
+                    <p>x9</p>
+                    <p>x10</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="basic">
+            <div class="basic-top">
+                <p>Aniqlanadigan parametr(og'irlik, uzunlik, qalinlik)</p>
+            </div>
+            <div class="basic-bottom">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <p>6</p>
+                <p>7</p>
+                <p>8</p>
+                <p>9</p>
+                <p>10</p>
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+            <div class="basic-bottom-input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+                <input type="number" class="input">
+            </div>
+        </div>
+
+        <!-- ==== right ==== -->
+        <div class="right">
+            <div class="right-top">
+                <div class="box">
+                    <p>Mediana</p>
+                </div>
+                <div class="box">
+                    <p>Markaziy chiziq</p>
+                </div>
+                <div class="box">
+                    <p>Quyi chiziq</p>
+                </div>
+                <div class="box">
+                    <p>Yuqori chiziq</p>
+                </div>
+                <div class="box">
+                    <p>R-Quloch</p>
+                </div>
+                <div class="box">
+                    <p>R-Markaziy quloch</p>
+                </div>
+                <div class="box">
+                    <p>R-Quyi chiziq</p>
+                </div>
+                <div class="box">
+                    <p>R-Yuqori chiziq</p>
+                </div>
+            </div>
+
+            <div class="right-bottom">
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+                <div class="my-row">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons d-flex justify-content-around mt-5">
+            <button class="btn btn-success mr-5 saveBtn-js">Saqlash</button>
+        </div>
+    </div>
+
+
+    <!-- <div class="container-fluid mt-3">
+        <div class="buttons d-flex justify-content-between">
+            <button class="btn btn-danger" type="submit">Yangi qator qo'shish</button>
+            <button class="btn btn-success mr-5" type="submit">Saqlash</button>
+        </div>
+    </div> -->
+
+
+
+
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js -->
+
+
+    <!-- Chart -->
+    <script src="chart.js"></script>
+    <!-- JS -->
+    <script src="script.js"></script>
+    <!-- my chart -->
+    <script src="myChart.js"></script>
+    <!-- ==== index js ==== -->
+    <script src="index.js"></script>
+</body>
+</html>
