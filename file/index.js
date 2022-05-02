@@ -22,7 +22,6 @@ one.forEach((i,j) => {
         
     })
 })
-
 two.forEach((i) => {
     i.addEventListener("input", () => {
         addWarning(two);
@@ -36,27 +35,49 @@ three.forEach((i) => {
     })
 })
 four.forEach((i) => {
-    i.addEventListener("input", () => addWarning(four))
+    i.addEventListener("input", () => {
+        addWarning(four);
+        addArr(four, 3);
+    })
 })
 five.forEach((i) => {
-    i.addEventListener("input", () => addWarning(five))
+    i.addEventListener("input", () => {
+        addWarning(five);
+        addArr(five, 4);
+    })
 })
 six.forEach((i) => {
-    i.addEventListener("input", () => addWarning(six))
+    i.addEventListener("input", () => {
+        addWarning(six);
+        addArr(six, 6);
+    })
 })
 seven.forEach((i) => {
-    i.addEventListener("input", () => addWarning(seven))
+    i.addEventListener("input", () => {
+        addWarning(seven);
+        addArr(seven, 7);
+    })
 })
 eight.forEach((i) => {
-    i.addEventListener("input", () => addWarning(eight))
+    i.addEventListener("input", () => {
+        addWarning(eight);
+        addArr(eight, 8);
+    })
 })
 nine.forEach((i) => {
-    i.addEventListener("input", () => addWarning(nine))
+    i.addEventListener("input", () => {
+        addWarning(nine);
+        addArr(nine, 9);
+    })
 })
 ten.forEach((i) => {
-    i.addEventListener("input", () => addWarning(ten))
+    i.addEventListener("input", () => {
+        addWarning(ten);
+        addArr(ten, 10);
+    })
 })
 
+// ==== oshiqcha inputlarga disabled qoshiuvchi funksiya ====
 const addWarning = (a) => {
     a.forEach(item => {
         if(!item.value == ''){
@@ -67,6 +88,7 @@ const addWarning = (a) => {
     itemDisabled(a);
 }
 
+// ==== ogohlantirish qoshib ketuvchi funksiya ====
 // ==== loop ====
 const loop = (items) => {
     for(let k=0; k<cout; k++){
@@ -79,6 +101,7 @@ const loop = (items) => {
     }
 }
 
+// ==== oshiqcha inputlarga disabled qoshiuvchi funksiya ====
 // ==== item disabled ====
 const itemDisabled = (item) => {
     item.slice(cout, item.length).forEach(item => {
@@ -87,6 +110,7 @@ const itemDisabled = (item) => {
 }
 
 //  ==== cout ====
+// ==== nechta katakchaga malumot kiritlganini aniqlovchi funksiya ====
 const funCout = (array) => {
     cout = 0;
 
@@ -105,6 +129,7 @@ const funCout = (array) => {
 let arr = [];
 let mediana = [];
 
+// katakchalardagi qiymatlarni arrayga kirituvchi funkssiya ====
 const addArr = (a, k) => {
      arr[k] = a.map(i => {
         if(!i.value == ''){
