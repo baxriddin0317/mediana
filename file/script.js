@@ -5,30 +5,45 @@ let min = 0;
 
 // ==== malumotlarni saqlab diagrammaga kirituvchi funksiya ====
 elSaveBtn.addEventListener("click", () => {
-    medianaFun();
-    myChart.destroy();
-    myChart1.destroy();
+    threeFun();
 
-    datasetFun();
-    datasetMediana();
-    maxMinFun();
-    maxMinAdd();
+    if(natija){
+        medianaFun();
+        myChart.destroy();
+        myChart1.destroy();
+    
+        datasetFun();
+        datasetMediana();
+        maxMinFun();
+        maxMinAdd();
+    
+        myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    
+        addYuqoriArr();
+        addPastkiArr();
+        addMarkaziyArr();
+        datasetSecondFun();
+    
+        myChart1 = new Chart(
+            document.getElementById('myChart1'),
+            config1
+        );
+    }else{
+        alert("Kataklarni eng kamida 3x3 tarzida to`ldiring iltimos :)")
+    }
 
-    myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
-
-    addYuqoriArr();
-    addPastkiArr();
-    addMarkaziyArr();
-    datasetSecondFun();
-
-    myChart1 = new Chart(
-        document.getElementById('myChart1'),
-        config1
-    );
 });
+
+// ==== malumotlar 3 satr va qatordan kam bolmasligiuchun function ====
+let natija = false;
+const threeFun = () => {
+    if(cout >= 3 && arr.length >= 3){
+        natija = true;
+    }    
+}
 
 // ==== meadianani hisoblovchi funksiya ====
 const medianaFun = () => {
